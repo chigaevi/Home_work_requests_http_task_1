@@ -1,8 +1,8 @@
 import requests
 
 def get_all_superhero_list (url='https://akabab.github.io/superhero-api/api/all.json'):
-    superhero_powerstat = requests.get(url)
-    return superhero_powerstat.json()
+    superhero_list = requests.get(url)
+    return superhero_list.json()
 
 def smartes_superhero(list_heros):
     all_superheros = get_all_superhero_list()
